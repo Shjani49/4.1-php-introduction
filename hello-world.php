@@ -19,3 +19,31 @@ echo $mySingleQuoteString;
 echo "\n\n"; //NewLines!
 $myDoubleQuoteString = "\n\n This is a double quotes String:\n $myString"; //Double quotes let us inject variables right inside our string!
 echo $myDoubleQuoteString;
+
+// Comments in PHP. // is used for a one-line comment.
+# we can also use bash-style one-line comments ("#").
+/* We can also 
+do multi-line comments
+    by
+        using
+        asterisk and slash, like we did in previous language!
+*/
+
+//Data-types.
+$myString = 'This is a string'; // String.
+$myTrueBoolean = TRUE; // Boolean.
+$myFalseBoolean = false; // Boolean.
+$myInt = 42; // Integer.
+$myFloat = 3.14; // Decimal value (float / double.)
+$myNull = null;
+$myArray = [ 1, 2, 3, 4, 5, 'test', false, null ]; // Array (can be created using the [] OR array() syntaxes.)
+$mySecondArray = array( 
+    $myString,
+    $myTrueBoolean,
+    $myFalseBoolean,
+    $myInt,
+    $myFloat,
+    $myNull,
+    $myArray
+);
+
