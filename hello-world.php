@@ -95,7 +95,7 @@ echo "\n His second Hobby is : {$myAssociativeArray['hobbies'][1]}!";
 echo "\n\n Looping through an associative (or any) array.\n\n";
 foreach ( $myAssociativeArray as $myKey => $myValue)
 {
-    if( !is_array( $myValue ) )
+    if( !is_array( $myValue ) ) // The is_array() is an inbuilt function in PHP. The is_array() function is used to check whether a variable is an array or not. ... Return value: It is a boolean function so returns TRUE when $variable_name is a boolean value, otherwise FALSE.
     {
         echo "\n The Associative key \"$myKey\" is assigned the value: $myValue\n";
     }
