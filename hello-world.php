@@ -79,4 +79,31 @@ while ( $myI >= -35 ) {
                // SmyI = $myI -5;
 }
 
+// Arrays 
 echo "\n\n Arrays again...\n\n";
+echo 'The First item in $mySecondArray is:' . $mySecondArray[0];
+
+echo "\n\n Instead of indexed arrays, we can also use associative arrays.\n That is to say: arrays with key-value pairs!\n\n";
+$myAssociativeArray = array( // Associative Arrays have keys AND  values.
+    'name' => 'Bob',
+    'Age' => '23',
+    'hobbies' => [ "Swimming", "Golf"] // Indexed arrays have index numbers and values.
+);
+echo "{$myAssociativeArray['name']} is {$myAssociativeArray['Age']} years old.";
+echo "\n His second Hobby is : {$myAssociativeArray['hobbies'][1]}!";
+
+echo "\n\n Looping through an associative (or any) array.\n\n";
+foreach ( $myAssociativeArray as $myKey => $myValue)
+{
+    if( !is_array( $myValue ) )
+    {
+        echo "\n The Associative key \"$myKey\" is assigned the value: $myValue\n";
+    }
+    else{
+        foreach ( $myValue as $hobby ) 
+        {
+            echo "\n One of the $myKey is: $hobby";
+        }
+    }
+    
+}
